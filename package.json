@@ -1,0 +1,27 @@
+{
+  "name": "node-event-proposal",
+  "version": "1.0.0",
+  "description": "Backend for event proposal page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shubham-Parad/Node-Event-Proposal.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Shubham-Parad/Node-Event-Proposal/issues"
+  },
+  "homepage": "https://github.com/Shubham-Parad/Node-Event-Proposal#readme",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "mongoose": "^7.2.2",
+    "nodemon": "^2.0.22",
+    "pg": "^8.11.0",
+    "pg-hstore": "^2.3.4"
+  }
+}
