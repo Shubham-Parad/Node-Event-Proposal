@@ -1,7 +1,6 @@
-const mongoose =require ('mongoose');
+const mongoose = require('mongoose');
 
 const registerUser = new mongoose.Schema({
-
     username:{
         type:String,
         require:true,
@@ -26,6 +25,7 @@ const registerUser = new mongoose.Schema({
         type:String,
         require:true,
     }
+});
 
-})
-module.exports = mongoose.model("User",registerUser)
+const registerUserModel = mongoose.model('user-reg-data', registerUser);
+module.exports = registerUserModel;

@@ -1,48 +1,61 @@
 const mongoose = require('mongoose');
 
-const Proposal = new mongoose.Schema({
+const selectedSchema = new mongoose.Schema({
+
+    vendorName: {
+        type: String,
+    },
+    vendorId: {
+        type: String
+    },
+    vendorEmail: {
+        type: String,
+
+    },
     eventName: {
         type: String,
         require: true,
     },
-   eventPlace: {
+    eventPlace: {
         type: String,
         require: true,
     },
-    proposalType : {
+    proposalType: {
         type: String,
         require: true,
     },
     eventType: {
         type: String,
         require: true,
-    },    
+    },
     budget: {
         type: Number,
         require: true,
     },
-    fromDate:{
-        type: String,
+    fromDate: {
+        type: Date,
     },
-    toDate:{
-        type: String,
+    toDate: {
+        type: Date,
     },
     description: {
         type: String,
         require: true,
     },
-    foodPreferences : {
-        type: String,
-        require: true,
-    }, 
-    events:{
+    foodPreferences: {
         type: String,
         require: true,
     },
-    images : {
-        type: [String],
-        require :true,
+    events: {
+        type: String,
+        require: true,
+    },
+    images: {
+        type: String,
+        require: true,
     }
-},
+}
 )
-module.exports = mongoose.model("Event" , Proposal);
+
+const selectedModel = mongoose.model("selected-data", selectedSchema);
+module.exports = selectedModel;
