@@ -207,7 +207,7 @@ router.post("/selectproposal", async (req, res) => {
     }
 });
 
-//get selected proposal by id
+//get selected proposal by ids
 router.get("/getselectedproposals/:id", async (req, res) => {
     const data = await selectedModel.findById(req.params.id)
     console.log(data)
